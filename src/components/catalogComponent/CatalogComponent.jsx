@@ -1,5 +1,5 @@
 import React from "react";
-import "./Catalog.scss";
+import "./CatalogComponent.scss";
 import right from "../../assets/right.png";
 import rightgray from "../../assets/rightgray.png";
 import catalog1 from "../../assets/catalog1.png";
@@ -28,7 +28,7 @@ function Catalog() {
               <img src={rightgray} alt="" />
             </div>
           </div>
-          <img width={220} height={206} src={catalog1} alt="" />
+          <img className="catalogimg" src={catalog1} alt="" />
         </div>
         <div className="b4">
           <div>
@@ -38,7 +38,7 @@ function Catalog() {
               <img src={rightgray} alt="" />
             </div>
           </div>
-          <img width={220} height={206} src={catalog2} alt="" />
+          <img className="catalogimg" src={catalog2} alt="" />
         </div>
         <div className="b4">
           <div>
@@ -48,7 +48,7 @@ function Catalog() {
               <img src={rightgray} alt="" />
             </div>
           </div>
-          <img width={220} height={206} src={catalog3} alt="" />
+          <img className="catalogimg" src={catalog3} alt="" />
         </div>
         <div className="b4">
           <div>
@@ -58,7 +58,7 @@ function Catalog() {
               <img src={rightgray} alt="" />
             </div>
           </div>
-          <img width={220} height={206} src={catalog4} alt="" />
+          <img className="catalogimg" src={catalog4} alt="" />
         </div>
         <div className="b4">
           <div>
@@ -68,7 +68,7 @@ function Catalog() {
               <img src={rightgray} alt="" />
             </div>
           </div>
-          <img width={220} height={206} src={catalog5} alt="" />
+          <img className="catalogimg" src={catalog5} alt="" />
         </div>
         <div className="b4">
           <div>
@@ -78,7 +78,7 @@ function Catalog() {
               <img src={rightgray} alt="" />
             </div>
           </div>
-          <img width={220} height={206} src={catalog6} alt="" />
+          <img className="catalogimg" src={catalog6} alt="" />
         </div>
       </div>
     </div>

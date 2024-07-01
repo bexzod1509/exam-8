@@ -10,7 +10,9 @@ function Footer() {
     pathname === "/admin" ||
     pathname === "/admin/createproduct" ||
     pathname === "/admin/manageproduct" ||
-    pathname === "/notfound"
+    pathname === "/notfound" ||
+    pathname === "/admin/managecategory" ||
+    pathname === "/admin/createcategory"
   ) {
     return <></>;
   }

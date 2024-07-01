@@ -32,3 +32,15 @@
     }
   }
 }
+@media (max-width: 510px) {
+  .b .b1 {
+    h1,
+    p {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+  .b img {
+    width: 300px;
+  }
+}

@@ -1,0 +1,144 @@
+.getorder {
+  padding: 45px 48px;
+  border-radius: 20px;
+  background: rgb(242, 242, 242);
+  margin-top: 20px;
+  h1 {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  h2 {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 75px;
+    margin-bottom: 31px;
+  }
+  input {
+    padding: 14px 20px;
+    border: 1px solid rgb(69, 69, 69);
+    border-radius: 100px;
+    width: 373px;
+    outline: none;
+    background: transparent;
+  }
+  .getorder1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 31px;
+  }
+  textarea {
+    display: block;
+    padding: 20px;
+    resize: none;
+    width: 767px;
+    height: 150px;
+    outline: none;
+    background: transparent;
+    margin-top: 31px;
+    border: 1px solid rgb(69, 69, 69);
+    border-radius: 26px;
+  }
+}
+.getorder2 {
+  padding: 48px;
+  border-radius: 20px;
+  background: rgb(242, 242, 242);
+  margin-top: 58px;
+  h1 {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  p {
+    color: rgba(69, 69, 69, 0.5);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  .getorder3 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  h2 {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: 69px;
+  }
+  .getorder4 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 28px;
+    button {
+      padding: 14px 135px;
+      border: none;
+      cursor: pointer;
+      border-radius: 100px;
+      color: rgb(255, 255, 255);
+      font-family: Manrope;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-align: left;
+      background: rgb(69, 69, 69);
+    }
+  }
+}
+.addressinput {
+  width: "767px";
+}
+@media (max-width: 860px) {
+  .getorder input {
+    width: 100%;
+  }
+  .getorder textarea {
+    width: 100%;
+  }
+  .getorder4 {
+    flex-wrap: wrap;
+    button {
+      width: 250px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .getorder2 {
+    padding: 10px;
+  }
+  .getorder {
+    padding: 10px;
+  }
+}

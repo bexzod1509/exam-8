@@ -64,13 +64,13 @@
 }
 /* loading */
 .sk1 {
-  width: 326px;
+  width: 306px;
   height: 246px;
   background: rgb(215, 214, 214);
   border-radius: 8px;
 }
 .sk2 {
-  width: 326px;
+  width: 306px;
   height: 20px;
   background: rgb(215, 214, 214);
   border-radius: 8px;
@@ -87,6 +87,7 @@
   animation: skeleton-loading 1s linear infinite alternate;
   display: flex;
   align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
@@ -18,9 +17,13 @@ import Login from "./pages/login/Login";
 import Auth from "./pages/Auth/Auth";
 import Admin from "./pages/admin/Admin";
 import CreateProduct from "./pages/createProduct/Createproduct";
+import CreateCategory from "./pages/createCategory/Createcategory";
+import ManageCategory from "./pages/manageCategory/Managecategory";
 import ManageProduct from "./pages/manageProduct/Manageproduct";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="body">
@@ -44,10 +47,13 @@ function App() {
           <Route path="/admin" element={<Admin />}>
             <Route path="createproduct" element={<CreateProduct />} />
             <Route path="manageproduct" element={<ManageProduct />} />
+            <Route path="createcategory" element={<CreateCategory />} />
+            <Route path="managecategory" element={<ManageCategory />} />
           </Route>
         </Route>
       </Routes>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }

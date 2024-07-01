@@ -1,0 +1,41 @@
+.notfound {
+  text-align: center;
+  h1 {
+    color: rgba(69, 69, 69, 0.2);
+    font-family: Manrope;
+    font-size: 427px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+  }
+  p {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0%;
+    margin-top: 18px;
+  }
+  button {
+    border-radius: 100px;
+    border: none;
+    padding: 14px 63px;
+    background: rgb(69, 69, 69);
+    color: rgb(255, 255, 255);
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 875px) {
+  .notfound h1 {
+    font-size: 150px;
+  }
+}

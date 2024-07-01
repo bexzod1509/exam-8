@@ -1,0 +1,38 @@
+.wishes {
+  h1 {
+    color: rgb(69, 69, 69);
+    font-family: Manrope;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 100px;
+  }
+  span {
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 600px;
+    background: rgb(198, 60, 60);
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+  }
+}
+@media (max-width: 660px) {
+  .wishes h1 {
+    font-size: 35px;
+  }
+  .wishes span {
+    margin-left: 330px;
+    margin-top: -40px;
+  }
+}
+@media (max-width: 388px) {
+  .wishes span {
+    margin-left: 195px;
+    margin-top: -80px;
+  }
+}
