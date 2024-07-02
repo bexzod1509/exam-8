@@ -79,16 +79,28 @@ function Navbar() {
           <div className={`navbar-responsive ${toggle ? "open" : ""}`}>
             <div className="a3">
               <div id="responsive">
-                <NavLink to={"/about"}>О компании</NavLink>
-                <NavLink to={"/order"}>Доставка и оплата</NavLink>
-                <NavLink to={"/return"}>Возврат</NavLink>
-                <NavLink to={"/garant"}>Гарантии</NavLink>
-                <NavLink to={"/contact"}>Контакты</NavLink>
-                <NavLink to={"/blog"}>Блог</NavLink>
+                <NavLink onClick={() => setToggle(false)} to={"/about"}>
+                  О компании
+                </NavLink>
+                <NavLink onClick={() => setToggle(false)} to={"/order"}>
+                  Доставка и оплата
+                </NavLink>
+                <NavLink onClick={() => setToggle(false)} to={"/return"}>
+                  Возврат
+                </NavLink>
+                <NavLink onClick={() => setToggle(false)} to={"/garant"}>
+                  Гарантии
+                </NavLink>
+                <NavLink onClick={() => setToggle(false)} to={"/contact"}>
+                  Контакты
+                </NavLink>
+                <NavLink onClick={() => setToggle(false)} to={"/blog"}>
+                  Блог
+                </NavLink>
                 <p>8 (800) 890-46-56</p>
                 <button onClick={() => setCall(true)}>Заказать звонок</button>
               </div>
-              <NavLink to={"/catalog"}>
+              <NavLink onClick={() => setToggle(false)} to={"/catalog"}>
                 <img src={menu} alt="" />
                 <p>Каталог</p>
               </NavLink>
