@@ -144,7 +144,11 @@ function Navbar() {
           <div className="search">
             {searchValue.trim()
               ? filteredData?.slice(0, 5).map((el) => (
-                  <div className="searchitems" key={el.id}>
+                  <div
+                    onClick={() => handlenavigate(el.id)}
+                    className="searchitems"
+                    key={el.id}
+                  >
                     <h3>{el.title}</h3>
                   </div>
                 ))
