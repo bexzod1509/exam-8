@@ -68,6 +68,7 @@ function Createproduct() {
           name="category"
           id=""
         >
+          <option value="">All</option>
           {category}
         </select>
         <p>Desc</p>

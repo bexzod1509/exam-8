@@ -6,7 +6,7 @@ import search from "../../assets/search.png";
 import like from "../../assets/like.png";
 import cart from "../../assets/cart.png";
 import compare from "../../assets/compare.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import Call from "../call/Call";
 import { useGetProductsQuery } from "../../context/productApi";
@@ -17,6 +17,11 @@ function Navbar() {
   let cartList = useSelector((state) => state.cart.value);
   const { data } = useGetProductsQuery();
   const [searchValue, setSearchValue] = useState("");
+  let navigate = useNavigate();
+  const handlenavigate = (id) => {
+    navigate(`/product/${id}`);
+    setSearchValue("");
+  };
   const [filteredData, setFilteredData] = useState(null);
   const [call, setCall] = useState(false);
   useEffect(() => {
@@ -98,7 +103,11 @@ function Navbar() {
                 <div className="search">
                   {searchValue.trim()
                     ? filteredData?.slice(0, 5).map((el) => (
-                        <div className="searchitems" key={el.id}>
+                        <div
+                          onClick={() => handlenavigate(el.id)}
+                          className="searchitems"
+                          key={el.id}
+                        >
                           <h3>{el.title}</h3>
                         </div>
                       ))

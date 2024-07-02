@@ -78,6 +78,7 @@ function EditProduct({ editProduct, setEditProduct }) {
               name="category"
               id=""
             >
+              <option value="">All</option>
               {Category}
             </select>
             <p>Desc</p>

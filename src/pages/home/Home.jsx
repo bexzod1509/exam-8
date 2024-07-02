@@ -14,12 +14,7 @@ function Home() {
   const [categoryValue, setCategoryValue] = useState("");
   const [filteredData, setFilteredData] = useState(null);
   useEffect(() => {
-    setFilteredData(
-      data?.filter(
-        (i) =>
-          i.category.toLocaleLowerCase() === categoryValue.toLocaleLowerCase()
-      )
-    );
+    setFilteredData(data?.filter((i) => i.category === categoryValue));
   }, [categoryValue]);
   return (
     <div>
