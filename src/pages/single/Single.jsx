@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Single.scss";
-import product from "../../assets/product.png";
-import { addToCart } from "../../context/cartSlice";
+import {
+  addToCart,
+  incrementCart,
+  decrementCart,
+} from "../../context/cartSlice";
 import links from "../../assets/links.png";
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -11,9 +14,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleHeart } from "../../context/heartSlice";
 function Single() {
   let wishList = useSelector((state) => state.heart.value);
+  let cartList = useSelector((state) => state.cart.value);
   let dispatch = useDispatch();
   let { id } = useParams();
   const { data, isLoading } = useGetProductByIdQuery(id);
+  let filtereddata = cartList?.filter((el) => +el.id === +id);
   return (
     <div className="container">
       <div className="route">
@@ -57,10 +62,23 @@ function Single() {
           </div>
           <h4>{data?.description}</h4>
           <div className="single3">
-            <div className="single4">
-              <span>-</span>
-              <span>1</span>
-              <span>+</span>
+            <div className={filtereddata.length === 1 ? "single4" : "hide"}>
+              <button
+                className="singleinc"
+                disabled={filtereddata[0]?.quantity <= 1}
+                onClick={() => dispatch(decrementCart(data))}
+              >
+                -
+              </button>
+              <span>
+                {filtereddata[0]?.quantity ? filtereddata[0]?.quantity : 1}
+              </span>
+              <button
+                className="singleinc"
+                onClick={() => dispatch(incrementCart(data))}
+              >
+                +
+              </button>
             </div>
             <button onClick={() => dispatch(addToCart(data))}>В корзину</button>
             {wishList?.some((item) => item.id === data?.id) ? (

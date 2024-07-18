@@ -24,6 +24,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Backtop from "./components/backtop/Backtop";
 function App() {
   return (
     <div className="body">
@@ -53,6 +54,7 @@ function App() {
         </Route>
       </Routes>
       <Footer />
+      <Backtop />
       <ToastContainer />
     </div>
   );

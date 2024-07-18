@@ -1,0 +1,19 @@
+.backtop {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  font-size: 30px;
+  padding: 8px;
+  padding-bottom: 2px;
+  border-radius: 50%;
+  background: #fff;
+  svg {
+    color: #000;
+  }
+  transform: scale(1);
+  transition: 0.4s linear;
+}
+.backtop-show {
+  transform: scale(0);
+  right: 0px;
+}
