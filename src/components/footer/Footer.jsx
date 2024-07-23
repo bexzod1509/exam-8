@@ -24,7 +24,7 @@ function Footer() {
             <NavLink to={"/"}>
               <img src={logo} alt="" />
             </NavLink>
-            <a className="tophone" href="tel:+1234567890">
+            <a className="tophone" href="tel:+88008904656">
               8 (800) 890-46-56
             </a>
             <img style={{ marginTop: "35px" }} src={payment} alt="" />
